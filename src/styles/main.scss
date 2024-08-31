@@ -47,4 +47,8 @@
     &:hover {
         background-color: lighten(variaveis.$corDeFundoBotao, 5%);
     }
+    
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
 }

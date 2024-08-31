@@ -3,6 +3,10 @@
 .header {
     padding: 32px;
 
+    @media(max-width: 1023px){
+        padding: 8px 0 0;
+    }
+
     @media (max-width: 768px) {
         padding: 16px;
     }
@@ -22,7 +26,12 @@
 
     &__navbar {
         &__list {
-            display: flex;            
+            display: flex;   
+
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+
             &__item {
                 padding: 0px 48px;
                 text-transform: uppercase;
@@ -37,7 +46,7 @@
 
                 a {
                     text-decoration: none;
-                    color: variaveis.$corDeFundoBotao;
+                    color: #000;
                 }
             }
         }
